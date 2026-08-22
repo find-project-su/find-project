@@ -31,30 +31,32 @@ The ImgCreate system helps create visual content for presentations, landing page
 
 | File | Description | When to Use |
 |------|-------------|-------------|
-| [init_creation_v01.md](init_creation_v01.md) | Initial setup guide | Load first for new projects |
-| [img01_main_char_v01.md](img01_main_char_v01.md) | Main character illustrations | When Rosa is featured |
-| [img02_no_char_v01.md](img02_no_char_v01.md) | Character-free illustrations | For objects, scenes, concepts |
-| [img03_icon_v01.md](img03_icon_v01.md) | Icon illustrations | For UI elements, navigation |
-| [img04_charts_v01.md](img04_charts_v01.md) | Chart illustrations | For data visualization |
-| [img05_background_v01.md](img05_background_v01.md) | Background illustrations | For textures, decorations |
-| [img06_dark_theme_v01.md](img06_dark_theme_v01.md) | Dark theme variants | When black background needed |
-| [img07_color_details_v01.md](img07_color_details_v01.md) | Color accent guidelines | When adding color elements |
-| [img_cat_v01.md](img_cat_v01.md) | Category catalog | Reference for all types |
+| [init_creation_v01.md](Instruction/init_creation_v01.md) | Initial setup guide | Load first for new projects |
+| [slide_structure_types_v01.md](Instruction/slide_structure_types_v01.md) | Slide layout and structure guide | For designing presentation slides |
+| [img01_main_char_v01.md](Instruction/img01_main_char_v01.md) | Main character illustrations | When Rosa is featured |
+| [img02_no_char_v01.md](Instruction/img02_no_char_v01.md) | Character-free illustrations | For objects, scenes, concepts |
+| [img03_icon_v01.md](Instruction/img03_icon_v01.md) | Icon illustrations | For UI elements, navigation |
+| [img04_charts_v01.md](Instruction/img04_charts_v01.md) | Chart illustrations | For data visualization |
+| [img05_background_v01.md](Instruction/img05_background_v01.md) | Background illustrations | For textures, decorations |
+| [img06_dark_theme_v01.md](Instruction/img06_dark_theme_v01.md) | Dark theme variants | When black background needed |
+| [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Color accent guidelines | When adding color elements |
+| [img_cat_v01.md](Instruction/img_cat_v01.md) | Category catalog | Reference for all types |
 
 ### 🚀 Getting Started
 
 **1. Project Initialization**
-- Load `init_creation_v01.md` first
+- Load `Instruction/init_creation_v01.md` first
 - Review the process: clarify the task → plan → create → refine
 
 **2. Choose Illustration Type**
-- Main character? → `img01_main_char_v01.md`
-- Scene without characters? → `img02_no_char_v01.md`
-- UI icons? → `img03_icon_v01.md`
-- Data visualization? → `img04_charts_v01.md`
-- Backgrounds? → `img05_background_v01.md`
-- Dark theme? → `img06_dark_theme_v01.md`
-- Color accents? → `img07_color_details_v01.md`
+- Main character? → `Instruction/img01_main_char_v01.md`
+- Scene without characters? → `Instruction/img02_no_char_v01.md`
+- UI icons? → `Instruction/img03_icon_v01.md`
+- Data visualization? → `Instruction/img04_charts_v01.md`
+- Backgrounds? → `Instruction/img05_background_v01.md`
+- Dark theme? → `Instruction/img06_dark_theme_v01.md`
+- Color accents? → `Instruction/img07_color_details_v01.md`
+- Presentation slides? → `Instruction/slide_structure_types_v01.md`
 
 **3. Follow the Process**
 Each instruction provides:
@@ -130,7 +132,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 ### 🎯 Обзор
 
-Система ImgCreate помогает создавать визуальный контент для презентаций, лендингов, сайтов и других материалов, сохраняя единый художественный стиль.
+Система ImgCreate помогает создавать визуальный контент для презентаций, посадочных страниц, сайтов и других материалов, сохраняя единый художественный стиль.
 
 **Главный персонаж:** Роза Ромашкина — центральный визуальный образ для иллюстраций с участием персонажа.
 
@@ -151,30 +153,32 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 | Файл | Описание | Когда использовать |
 |------|----------|---------------------|
-| [init_creation_v01.md](init_creation_v01.md) | Руководство по начальной настройке | Загружать первым при начале нового проекта |
-| [img01_main_char_v01.md](img01_main_char_v01.md) | Иллюстрации с главным персонажем | Когда в кадре присутствует Роза |
-| [img02_no_char_v01.md](img02_no_char_v01.md) | Иллюстрации без персонажей | Для предметов, сцен, понятий |
-| [img03_icon_v01.md](img03_icon_v01.md) | Иконки | Для элементов интерфейса, навигации, категорий |
-| [img04_charts_v01.md](img04_charts_v01.md) | Иллюстрации графиков и схем | Для наглядного представления данных |
-| [img05_background_v01.md](img05_background_v01.md) | Фоновые иллюстрации | Для текстур и декоративных элементов |
-| [img06_dark_theme_v01.md](img06_dark_theme_v01.md) | Варианты в тёмной теме | Когда нужен чёрный фон |
-| [img07_color_details_v01.md](img07_color_details_v01.md) | Правила использования цветовых акцентов | При добавлении цветных элементов |
-| [img_cat_v01.md](img_cat_v01.md) | Каталог категорий | Справочник по всем типам иллюстраций |
+| [init_creation_v01.md](Instruction/init_creation_v01.md) | Руководство по начальной настройке | Загружать первым при начале нового проекта |
+| [slide_structure_types_v01.md](Instruction/slide_structure_types_v01.md) | Правила компоновки и структуры слайдов | Для оформления презентаций |
+| [img01_main_char_v01.md](Instruction/img01_main_char_v01.md) | Иллюстрации с главным персонажем | Когда в кадре присутствует Роза |
+| [img02_no_char_v01.md](Instruction/img02_no_char_v01.md) | Иллюстрации без персонажей | Для предметов, сцен, понятий |
+| [img03_icon_v01.md](Instruction/img03_icon_v01.md) | Иконки | Для элементов интерфейса, навигации, категорий |
+| [img04_charts_v01.md](Instruction/img04_charts_v01.md) | Иллюстрации графиков и схем | Для наглядного представления данных |
+| [img05_background_v01.md](Instruction/img05_background_v01.md) | Фоновые иллюстрации | Для текстур и декоративных элементов |
+| [img06_dark_theme_v01.md](Instruction/img06_dark_theme_v01.md) | Варианты в тёмной теме | Когда нужен чёрный фон |
+| [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Правила использования цветовых акцентов | При добавлении цветных элементов |
+| [img_cat_v01.md](Instruction/img_cat_v01.md) | Каталог категорий | Справочник по всем типам иллюстраций |
 
 ### 🚀 Начало работы
 
 **1. Запуск проекта**
-- Сначала загрузите `init_creation_v01.md`
+- Сначала загрузите `Instruction/init_creation_v01.md`
 - Ознакомьтесь с порядком работы: уточнение задачи → планирование → создание → доработка
 
 **2. Выберите тип иллюстрации**
-- Главный персонаж? → `img01_main_char_v01.md`
-- Сцена без персонажей? → `img02_no_char_v01.md`
-- Иконки интерфейса? → `img03_icon_v01.md`
-- Наглядное представление данных? → `img04_charts_v01.md`
-- Фоны? → `img05_background_v01.md`
-- Тёмная тема? → `img06_dark_theme_v01.md`
-- Цветовые акценты? → `img07_color_details_v01.md`
+- Главный персонаж? → `Instruction/img01_main_char_v01.md`
+- Сцена без персонажей? → `Instruction/img02_no_char_v01.md`
+- Иконки интерфейса? → `Instruction/img03_icon_v01.md`
+- Наглядное представление данных? → `Instruction/img04_charts_v01.md`
+- Фоны? → `Instruction/img05_background_v01.md`
+- Тёмная тема? → `Instruction/img06_dark_theme_v01.md`
+- Цветовые акценты? → `Instruction/img07_color_details_v01.md`
+- Оформление слайдов? → `Instruction/slide_structure_types_v01.md`
 
 **3. Следуйте порядку работы**
 Каждая инструкция содержит:
