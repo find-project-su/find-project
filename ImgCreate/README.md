@@ -42,6 +42,12 @@ The ImgCreate system helps create visual content for presentations, landing page
 | [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Color accent guidelines | When adding color elements |
 | [img_cat_v01.md](Instruction/img_cat_v01.md) | Category catalog | Reference for all types |
 
+**Presentation Review System**
+| [review/review_manual.md](Instruction/review/review_manual.md) | Comprehensive review checklist | For evaluating finished presentations |
+| [review/start_review.md](Instruction/review/start_review.md) | Review initiation prompt | To start AI-assisted review process |
+| [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Context template example | When preparing presentation context |
+| [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Review report example | To understand expected output format |
+
 ### 🚀 Getting Started
 
 **1. Project Initialization**
@@ -58,7 +64,15 @@ The ImgCreate system helps create visual content for presentations, landing page
 - Color accents? → `Instruction/img07_color_details_v01.md`
 - Presentation slides? → `Instruction/slide_structure_types_v01.md`
 
-**3. Follow the Process**
+**3. Review Your Presentation**
+When your presentation is ready, use the review system:
+1. Prepare context: describe topic, audience, goals (`Instruction/review/Example_review_context.md`)
+2. Load the review manual (`Instruction/review/review_manual.md`)
+3. Upload your PDF presentation
+4. Use the start prompt (`Instruction/review/start_review.md`)
+5. Get structured feedback with specific recommendations
+
+**4. Follow the Process**
 Each instruction provides:
 - General principles and rules
 - Technical specifications
@@ -90,7 +104,7 @@ Each instruction provides:
 
 ### 🎨 Use Cases
 
-- **Presentations:** slide headers, concept illustrations, process diagrams
+- **Presentations:** slide headers, concept illustrations, process diagrams, quality review
 - **Websites and landing pages:** hero illustrations, feature highlights, call-to-action graphics
 - **Marketing:** social media posts, banners, newsletter graphics
 - **Documentation:** tutorial illustrations, infographics, step-by-step guides
@@ -118,7 +132,8 @@ Each instruction provides:
 2. Create multiple versions to compare
 3. Test at the actual display size
 4. Get feedback before finalizing
-5. Document style decisions for future reference
+5. Use the review system to catch overlooked issues
+6. Document style decisions for future reference
 
 ### 📄 License
 
@@ -164,6 +179,12 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 | [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Правила использования цветовых акцентов | При добавлении цветных элементов |
 | [img_cat_v01.md](Instruction/img_cat_v01.md) | Каталог категорий | Справочник по всем типам иллюстраций |
 
+**Система ревью презентаций**
+| [review/review_manual.md](Instruction/review/review_manual.md) | Подробный чек-лист ревью | Для оценки готовых презентаций |
+| [review/start_review.md](Instruction/review/start_review.md) | Промт для запуска ревью | Для начала процесса ревью с ИИ |
+| [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Пример контекста презентации | При подготовке контекста для ревью |
+| [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Пример отчёта по ревью | Для понимания формата результата |
+
 ### 🚀 Начало работы
 
 **1. Запуск проекта**
@@ -180,7 +201,15 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 - Цветовые акценты? → `Instruction/img07_color_details_v01.md`
 - Оформление слайдов? → `Instruction/slide_structure_types_v01.md`
 
-**3. Следуйте порядку работы**
+**3. Ревью готовой презентации**
+Когда презентация готова, используйте систему ревью:
+1. Подготовьте контекст: опишите тему, аудиторию, цели (`Instruction/review/Example_review_context.md`)
+2. Загрузите руководство по ревью (`Instruction/review/review_manual.md`)
+3. Загрузите PDF-файл презентации
+4. Используйте стартовый промт (`Instruction/review/start_review.md`)
+5. Получите структурированную обратную связь с конкретными рекомендациями
+
+**4. Следуйте порядку работы**
 Каждая инструкция содержит:
 - общие принципы и правила;
 - технические требования;
@@ -212,7 +241,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 ### 🎨 Области применения
 
-- **Презентации:** заголовки слайдов, иллюстрации к понятиям, схемы процессов
+- **Презентации:** заголовки слайдов, иллюстрации к понятиям, схемы процессов, контроль качества
 - **Сайты и посадочные страницы:** обложки, иллюстрации к функциям, графика для призывов к действию
 - **Маркетинг:** публикации в социальных сетях, баннеры, графика для рассылок
 - **Документация:** иллюстрации к обучающим материалам, инфографика, пошаговые руководства
@@ -240,7 +269,8 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 2. Делайте несколько вариантов для сравнения
 3. Проверяйте результат в том размере, в котором он будет отображаться
 4. Получайте обратную связь перед утверждением
-5. Записывайте принятые стилевые решения, чтобы использовать их в дальнейшем
+5. Используйте систему ревью для выявления упущенных проблем
+6. Записывайте принятые стилевые решения, чтобы использовать их в дальнейшем
 
 ### 📄 Лицензия
 
