@@ -42,7 +42,9 @@ The ImgCreate system helps create visual content for presentations, landing page
 | [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Color accent guidelines | When adding color elements |
 | [img_cat_v01.md](Instruction/img_cat_v01.md) | Category catalog | Reference for all types |
 
-**Presentation Review System**
+#### Presentation Review System
+| File | Description | When to Use |
+|------|-------------|-------------|
 | [review/review_manual.md](Instruction/review/review_manual.md) | Comprehensive review checklist | For evaluating finished presentations |
 | [review/start_review.md](Instruction/review/start_review.md) | Review initiation prompt | To start AI-assisted review process |
 | [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Context template example | When preparing presentation context |
@@ -179,7 +181,9 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 | [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Правила использования цветовых акцентов | При добавлении цветных элементов |
 | [img_cat_v01.md](Instruction/img_cat_v01.md) | Каталог категорий | Справочник по всем типам иллюстраций |
 
-**Система ревью презентаций**
+#### Система ревью презентаций
+| Файл | Описание | Когда использовать |
+|------|----------|---------------------|
 | [review/review_manual.md](Instruction/review/review_manual.md) | Подробный чек-лист ревью | Для оценки готовых презентаций |
 | [review/start_review.md](Instruction/review/start_review.md) | Промт для запуска ревью | Для начала процесса ревью с ИИ |
 | [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Пример контекста презентации | При подготовке контекста для ревью |
