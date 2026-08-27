@@ -50,6 +50,14 @@ The ImgCreate system helps create visual content for presentations, landing page
 | [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Context template example | When preparing presentation context |
 | [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Review report example | To understand expected output format |
 
+#### Universal Chart Prompts
+| File | Description | When to Use |
+|------|-------------|-------------|
+| [charts/donut_v01.md](Instruction/charts/donut_v01.md) | Donut chart creation prompt | For creating ring/donut diagrams |
+| [charts/histogram_v01.md](Instruction/charts/histogram_v01.md) | Histogram creation prompt | For creating vertical bar charts |
+
+**📚 Style References:** Download chart style samples from [Hugging Face Dataset](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+
 ### 🚀 Getting Started
 
 **1. Project Initialization**
@@ -61,6 +69,8 @@ The ImgCreate system helps create visual content for presentations, landing page
 - Scene without characters? → `Instruction/img02_no_char_v01.md`
 - UI icons? → `Instruction/img03_icon_v01.md`
 - Data visualization? → `Instruction/img04_charts_v01.md`
+- Donut chart? → `Instruction/charts/donut_v01.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+- Histogram? → `Instruction/charts/histogram_v01.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
 - Backgrounds? → `Instruction/img05_background_v01.md`
 - Dark theme? → `Instruction/img06_dark_theme_v01.md`
 - Color accents? → `Instruction/img07_color_details_v01.md`
@@ -107,6 +117,7 @@ Each instruction provides:
 ### 🎨 Use Cases
 
 - **Presentations:** slide headers, concept illustrations, process diagrams, quality review
+- **Data Visualization:** donut charts, histograms, infographics with consistent style
 - **Websites and landing pages:** hero illustrations, feature highlights, call-to-action graphics
 - **Marketing:** social media posts, banners, newsletter graphics
 - **Documentation:** tutorial illustrations, infographics, step-by-step guides
@@ -126,6 +137,7 @@ Each instruction provides:
 **Size Recommendations**
 - **Icons:** 64×64 px to 256×256 px
 - **Illustrations:** 800×600 px to 1920×1080 px
+- **Charts:** 2:1 aspect ratio (landscape format)
 - **Backgrounds:** match target display dimensions
 
 ### 💡 Tips
@@ -135,7 +147,8 @@ Each instruction provides:
 3. Test at the actual display size
 4. Get feedback before finalizing
 5. Use the review system to catch overlooked issues
-6. Document style decisions for future reference
+6. Download style references from Hugging Face for consistent chart design
+7. Document style decisions for future reference
 
 ### 📄 License
 
@@ -189,6 +202,14 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 | [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Пример контекста презентации | При подготовке контекста для ревью |
 | [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Пример отчёта по ревью | Для понимания формата результата |
 
+#### Универсальные промты для диаграмм
+| Файл | Описание | Когда использовать |
+|------|----------|---------------------|
+| [charts/donut_v01.md](Instruction/charts/donut_v01.md) | Промт для создания кольцевой диаграммы | Для создания диаграмм-бубликов |
+| [charts/histogram_v01.md](Instruction/charts/histogram_v01.md) | Промт для создания гистограммы | Для создания вертикальных столбчатых диаграмм |
+
+**📚 Референсы стиля:** Скачайте образцы стиля диаграмм из [набора данных на Hugging Face](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+
 ### 🚀 Начало работы
 
 **1. Запуск проекта**
@@ -200,6 +221,8 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 - Сцена без персонажей? → `Instruction/img02_no_char_v01.md`
 - Иконки интерфейса? → `Instruction/img03_icon_v01.md`
 - Наглядное представление данных? → `Instruction/img04_charts_v01.md`
+- Кольцевая диаграмма? → `Instruction/charts/donut_v01.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+- Гистограмма? → `Instruction/charts/histogram_v01.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
 - Фоны? → `Instruction/img05_background_v01.md`
 - Тёмная тема? → `Instruction/img06_dark_theme_v01.md`
 - Цветовые акценты? → `Instruction/img07_color_details_v01.md`
@@ -246,6 +269,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 ### 🎨 Области применения
 
 - **Презентации:** заголовки слайдов, иллюстрации к понятиям, схемы процессов, контроль качества
+- **Визуализация данных:** кольцевые диаграммы, гистограммы, инфографика в едином стиле
 - **Сайты и посадочные страницы:** обложки, иллюстрации к функциям, графика для призывов к действию
 - **Маркетинг:** публикации в социальных сетях, баннеры, графика для рассылок
 - **Документация:** иллюстрации к обучающим материалам, инфографика, пошаговые руководства
@@ -265,6 +289,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 **Рекомендации по размерам**
 - **Иконки:** от 64×64 до 256×256 пикселей
 - **Иллюстрации:** от 800×600 до 1920×1080 пикселей
+- **Диаграммы:** соотношение сторон 2:1 (альбомный формат)
 - **Фоны:** соответствуют размерам места отображения
 
 ### 💡 Советы
@@ -274,7 +299,8 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 3. Проверяйте результат в том размере, в котором он будет отображаться
 4. Получайте обратную связь перед утверждением
 5. Используйте систему ревью для выявления упущенных проблем
-6. Записывайте принятые стилевые решения, чтобы использовать их в дальнейшем
+6. Скачивайте референсы стиля с Hugging Face для создания диаграмм в едином стиле
+7. Записывайте принятые стилевые решения, чтобы использовать их в дальнейшем
 
 ### 📄 Лицензия
 
