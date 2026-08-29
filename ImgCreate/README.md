@@ -1,6 +1,6 @@
 # ImgCreate — Visual Content Creation System 🎨
 
-🇬🇧 English | 🇷🇺 Русский
+[🇬🇧 English](#english) | [🇷🇺 Русский](#русский)
 
 ---
 
@@ -31,34 +31,34 @@ The ImgCreate system helps create visual content for presentations, landing page
 
 | File | Description | When to Use |
 |------|-------------|-------------|
-| init_creation_v01.md | Initial setup guide | Load first for new projects |
-| slide_structure_types_v01.md | Slide layout and structure guide | For designing presentation slides |
-| img01_main_char_v01.md | Main character illustrations | When Rosa is featured |
-| img02_no_char_v01.md | Character-free illustrations | For objects, scenes, concepts |
-| img03_icon_v01.md | Icon illustrations | For UI elements, navigation |
-| img04_charts_v01.md | Chart illustrations | For data visualization |
-| img05_background_v01.md | Background illustrations | For textures, decorations |
-| img06_dark_theme_v01.md | Dark theme variants | When black background needed |
-| img07_color_details_v01.md | Color accent guidelines | When adding color elements |
-| img_cat_v01.md | Category catalog | Reference for all types |
+| [init_creation_v01.md](Instruction/init_creation_v01.md) | Initial setup guide | Load first for new projects |
+| [slide_structure_types_v01.md](Instruction/slide_structure_types_v01.md) | Slide layout and structure guide | For designing presentation slides |
+| [img01_main_char_v01.md](Instruction/img01_main_char_v01.md) | Main character illustrations | When Rosa is featured |
+| [img02_no_char_v01.md](Instruction/img02_no_char_v01.md) | Character-free illustrations | For objects, scenes, concepts |
+| [img03_icon_v01.md](Instruction/img03_icon_v01.md) | Icon illustrations | For UI elements, navigation |
+| [img04_charts_v01.md](Instruction/img04_charts_v01.md) | Chart illustrations | For data visualization |
+| [img05_background_v01.md](Instruction/img05_background_v01.md) | Background illustrations | For textures, decorations |
+| [img06_dark_theme_v01.md](Instruction/img06_dark_theme_v01.md) | Dark theme variants | When black background needed |
+| [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Color accent guidelines | When adding color elements |
+| [img_cat_v01.md](Instruction/img_cat_v01.md) | Category catalog | Reference for all types |
 
 #### Presentation Review System
 | File | Description | When to Use |
 |------|-------------|-------------|
-| review/review_manual.md | Comprehensive review checklist | For evaluating finished presentations |
-| review/start_review.md | Review initiation prompt | To start AI-assisted review process |
-| review/Example_review_context.md | Context template example | When preparing presentation context |
-| review/Example_review_result.md | Review report example | To understand expected output format |
+| [review/review_manual.md](Instruction/review/review_manual.md) | Comprehensive review checklist | For evaluating finished presentations |
+| [review/start_review.md](Instruction/review/start_review.md) | Review initiation prompt | To start AI-assisted review process |
+| [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Context template example | When preparing presentation context |
+| [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Review report example | To understand expected output format |
 
 #### Universal Chart Prompts
 | File | Description | When to Use |
 |------|-------------|-------------|
-| charts/Spider_Chart_Manual.md | Spider chart workflow guide | For creating radar/spider charts |
-| charts/5axis_Spider 0-10scale_v01.md | 5-axis spider chart prompt | For 5-axis radar diagrams |
-| charts/6axis_Spider 0-10scale_v01.md | 6-axis spider chart prompt | For 6-axis radar diagrams |
-| charts/donut_v01.md | Donut chart creation prompt | For creating ring/donut diagrams |
-| charts/histogram_v01.md | Histogram creation prompt | For creating vertical bar charts |
-| charts/Spider 0-10scale_Examples.xlsx | Excel template with examples | For preparing spider chart data |
+| [charts/Spider_Chart_Manual.md](Instruction/charts/Spider_Chart_Manual.md) | Spider chart workflow guide | For creating radar/spider charts |
+| [charts/5axis_Spider 0-10scale_v01.md](Instruction/charts/5axis_Spider%200-10scale_v01.md) | 5-axis spider chart prompt | For 5-axis radar diagrams |
+| [charts/6axis_Spider 0-10scale_v01.md](Instruction/charts/6axis_Spider%200-10scale_v01.md) | 6-axis spider chart prompt | For 6-axis radar diagrams |
+| [charts/donut_v01.md](Instruction/charts/donut_v01.md) | Donut chart creation prompt | For creating ring/donut diagrams |
+| [charts/histogram_v01.md](Instruction/charts/histogram_v01.md) | Histogram creation prompt | For creating vertical bar charts |
+| [charts/Spider 0-10scale_Examples.xlsx](Instruction/charts/Spider%200-10scale_Examples.xlsx) | Excel template with examples | For preparing spider chart data |
 
 **📚 Style References:** Download chart style samples from [Hugging Face Dataset](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
 
@@ -73,9 +73,9 @@ The ImgCreate system helps create visual content for presentations, landing page
 - Scene without characters? → `Instruction/img02_no_char_v01.md`
 - UI icons? → `Instruction/img03_icon_v01.md`
 - Data visualization? → `Instruction/img04_charts_v01.md`
-- Spider chart? → `Instruction/charts/Spider_Chart_Manual.md`
-- Donut chart? → `Instruction/charts/donut_v01.md` + style reference
-- Histogram? → `Instruction/charts/histogram_v01.md` + style reference
+- Spider chart? → `Instruction/charts/Spider_Chart_Manual.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+- Donut chart? → `Instruction/charts/donut_v01.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+- Histogram? → `Instruction/charts/histogram_v01.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
 - Backgrounds? → `Instruction/img05_background_v01.md`
 - Dark theme? → `Instruction/img06_dark_theme_v01.md`
 - Color accents? → `Instruction/img07_color_details_v01.md`
@@ -142,7 +142,8 @@ Each instruction provides:
 **Size Recommendations**
 - **Icons:** 64×64 px to 256×256 px
 - **Illustrations:** 800×600 px to 1920×1080 px
-- **Charts:** 2:1 aspect ratio (landscape format)
+- **Spider charts:** 1:1 aspect ratio (square format)
+- **Donut charts, Histograms:** 2:1 aspect ratio (landscape format)
 - **Backgrounds:** match target display dimensions
 
 ### 💡 Tips
@@ -188,36 +189,36 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 | Файл | Описание | Когда использовать |
 |------|----------|---------------------|
-| init_creation_v01.md | Руководство по начальной настройке | Загружать первым при начале нового проекта |
-| slide_structure_types_v01.md | Правила компоновки и структуры слайдов | Для оформления презентаций |
-| img01_main_char_v01.md | Иллюстрации с главным персонажем | Когда в кадре присутствует Роза |
-| img02_no_char_v01.md | Иллюстрации без персонажей | Для предметов, сцен, понятий |
-| img03_icon_v01.md | Иконки | Для элементов интерфейса, навигации, категорий |
-| img04_charts_v01.md | Иллюстрации графиков и схем | Для наглядного представления данных |
-| img05_background_v01.md | Фоновые иллюстрации | Для текстур и декоративных элементов |
-| img06_dark_theme_v01.md | Варианты в тёмной теме | Когда нужен чёрный фон |
-| img07_color_details_v01.md | Правила использования цветовых акцентов | При добавлении цветных элементов |
-| img_cat_v01.md | Каталог категорий | Справочник по всем типам иллюстраций |
+| [init_creation_v01.md](Instruction/init_creation_v01.md) | Руководство по начальной настройке | Загружать первым при начале нового проекта |
+| [slide_structure_types_v01.md](Instruction/slide_structure_types_v01.md) | Правила компоновки и структуры слайдов | Для оформления презентаций |
+| [img01_main_char_v01.md](Instruction/img01_main_char_v01.md) | Иллюстрации с главным персонажем | Когда в кадре присутствует Роза |
+| [img02_no_char_v01.md](Instruction/img02_no_char_v01.md) | Иллюстрации без персонажей | Для предметов, сцен, понятий |
+| [img03_icon_v01.md](Instruction/img03_icon_v01.md) | Иконки | Для элементов интерфейса, навигации, категорий |
+| [img04_charts_v01.md](Instruction/img04_charts_v01.md) | Иллюстрации графиков и схем | Для наглядного представления данных |
+| [img05_background_v01.md](Instruction/img05_background_v01.md) | Фоновые иллюстрации | Для текстур и декоративных элементов |
+| [img06_dark_theme_v01.md](Instruction/img06_dark_theme_v01.md) | Варианты в тёмной теме | Когда нужен чёрный фон |
+| [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Правила использования цветовых акцентов | При добавлении цветных элементов |
+| [img_cat_v01.md](Instruction/img_cat_v01.md) | Каталог категорий | Справочник по всем типам иллюстраций |
 
 #### Система ревью презентаций
 | Файл | Описание | Когда использовать |
 |------|----------|---------------------|
-| review/review_manual.md | Подробный чек-лист ревью | Для оценки готовых презентаций |
-| review/start_review.md | Промт для запуска ревью | Для начала процесса ревью с ИИ |
-| review/Example_review_context.md | Пример контекста презентации | При подготовке контекста для ревью |
-| review/Example_review_result.md | Пример отчёта по ревью | Для понимания формата результата |
+| [review/review_manual.md](Instruction/review/review_manual.md) | Подробный чек-лист ревью | Для оценки готовых презентаций |
+| [review/start_review.md](Instruction/review/start_review.md) | Промт для запуска ревью | Для начала процесса ревью с ИИ |
+| [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Пример контекста презентации | При подготовке контекста для ревью |
+| [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Пример отчёта по ревью | Для понимания формата результата |
 
 #### Универсальные промты для диаграмм
 | Файл | Описание | Когда использовать |
 |------|----------|---------------------|
-| charts/Spider_Chart_Manual.md | Руководство по радиолокационным диаграммам | Для создания диаграмм-паутинок |
-| charts/5axis_Spider 0-10scale_v01.md | Промт для 5-осевой паутинки | Для радиолокационных диаграмм с 5 осями |
-| charts/6axis_Spider 0-10scale_v01.md | Промт для 6-осевой паутинки | Для радиолокационных диаграмм с 6 осями |
-| charts/donut_v01.md | Промт для создания кольцевой диаграммы | Для создания диаграмм-бубликов |
-| charts/histogram_v01.md | Промт для создания гистограммы | Для создания вертикальных столбчатых диаграмм |
-| charts/Spider 0-10scale_Examples.xlsx | Excel-шаблон с примерами | Для подготовки данных для паутинок |
+| [charts/Spider_Chart_Manual.md](Instruction/charts/Spider_Chart_Manual.md) | Руководство по радиолокационным диаграммам | Для создания диаграмм-паутинок |
+| [charts/5axis_Spider 0-10scale_v01.md](Instruction/charts/5axis_Spider%200-10scale_v01.md) | Промт для 5-осевой паутинки | Для радиолокационных диаграмм с 5 осями |
+| [charts/6axis_Spider 0-10scale_v01.md](Instruction/charts/6axis_Spider%200-10scale_v01.md) | Промт для 6-осевой паутинки | Для радиолокационных диаграмм с 6 осями |
+| [charts/donut_v01.md](Instruction/charts/donut_v01.md) | Промт для создания кольцевой диаграммы | Для создания диаграмм-бубликов |
+| [charts/histogram_v01.md](Instruction/charts/histogram_v01.md) | Промт для создания гистограммы | Для создания вертикальных столбчатых диаграмм |
+| [charts/Spider 0-10scale_Examples.xlsx](Instruction/charts/Spider%200-10scale_Examples.xlsx) | Excel-шаблон с примерами | Для подготовки данных для паутинок |
 
-**📚 Референсы стиля:** Скачайте образцы стиля диаграмм из набора данных на Hugging Face
+**📚 Референсы стиля:** Скачайте образцы стиля диаграмм из [набора данных на Hugging Face](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
 
 ### 🚀 Начало работы
 
@@ -230,9 +231,9 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 - Сцена без персонажей? → `Instruction/img02_no_char_v01.md`
 - Иконки интерфейса? → `Instruction/img03_icon_v01.md`
 - Наглядное представление данных? → `Instruction/img04_charts_v01.md`
-- Радиолокационная диаграмма (паутинка)? → `Instruction/charts/Spider_Chart_Manual.md`
-- Кольцевая диаграмма? → `Instruction/charts/donut_v01.md` + референс стиля
-- Гистограмма? → `Instruction/charts/histogram_v01.md` + референс стиля
+- Радиолокационная диаграмма (паутинка)? → `Instruction/charts/Spider_Chart_Manual.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+- Кольцевая диаграмма? → `Instruction/charts/donut_v01.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
+- Гистограмма? → `Instruction/charts/histogram_v01.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/tree/main/Reference_Imgs/Charts)
 - Фоны? → `Instruction/img05_background_v01.md`
 - Тёмная тема? → `Instruction/img06_dark_theme_v01.md`
 - Цветовые акценты? → `Instruction/img07_color_details_v01.md`
@@ -299,7 +300,8 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 **Рекомендации по размерам**
 - **Иконки:** от 64×64 до 256×256 пикселей
 - **Иллюстрации:** от 800×600 до 1920×1080 пикселей
-- **Диаграммы:** соотношение сторон 2:1 (альбомный формат)
+- **Радиолокационные диаграммы (паутинки):** соотношение сторон 1:1 (квадратный формат)
+- **Кольцевые диаграммы, гистограммы:** соотношение сторон 2:1 (альбомный формат)
 - **Фоны:** соответствуют размерам места отображения
 
 ### 💡 Советы
