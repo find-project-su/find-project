@@ -1,0 +1,51 @@
+site_name: Find Project Docs
+site_url: https://find-project-su.github.io/find-project/
+repo_url: https://github.com/find-project-su/find-project
+repo_name: find-project
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на темную тему
+    - scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate # Аннотации в коде
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list # Для добавления классов к элементам (например, размер картинок)
+  - md_in_html # Чтобы писать Markdown внутри HTML-тегов
+
+nav:
+  - Главная: index.md
+  - Требования:
+    - Обзор: requirements/index.md
+    - 'REQ-001: Стиль графики': requirements/imgcreate/style-guide.md
+    - 'REQ-002: Иконки': requirements/imgcreate/icons.md
+  - Модуль:
+    - Обзор: modules/imgcreate/overview.md

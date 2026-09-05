@@ -1,0 +1,5 @@
+# to ignore folders and files
+venv/
+site/
+__pycache__/
+.cache/
