@@ -51,6 +51,5 @@ nav:
     - EduMaterials:
       - Подготовить инструкции: requirements/edu/prepare-instructions.md
   - Модули:
-    - Bots: modules/bots.md
     - ImgCreate: modules/imgcreate/overview.md
     - EduMaterials: modules/edu/overview.md
