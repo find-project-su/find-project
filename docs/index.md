@@ -1,4 +1,5 @@
-![Логотип Find Project](assets/fINd_logo_project_v01.webp){ width=100 }
+<img class="logo-light" src="assets/fINd_logo_project_v01.webp" width="100" alt="Логотип Find Project">
+<img class="logo-dark" src="assets/fINd_logo_project_v02.webp" width="100" alt="Логотип Find Project">
 
 # f**IN**d Project
 
@@ -167,6 +168,54 @@ markdown_extensions:
     | `:material-telegram:` | `:fontawesome-brands-telegram:` |
     | `:material-python:` | `:fontawesome-brands-python:` |
     | `:material-git:` | `:fontawesome-brands-git:` |
+
+### 🖼️ Логотип для разных тем
+
+Цвет фона страницы меняется при переключении темы, поэтому логотип в **теле страницы** может становиться плохо видимым. Чтобы этого избежать, используются два варианта логотипа: один для светлой темы, другой для тёмной.
+
+??? note "Как настроить переключаемый логотип"
+    При переключении темы MkDocs Material добавляет на страницу атрибут `data-md-color-scheme` (`default` для светлой, `slate` для тёмной). Используем его, чтобы показывать нужный логотип.
+
+    **Шаг 1.** Подготовьте два файла логотипа и положите их в `docs/assets/`:
+
+    - `logo-light.webp` — версия для светлой темы
+    - `logo-dark.webp` — версия для тёмной темы
+
+    !!! tip "Имена файлов"
+        Названия могут быть любыми — главное, чтобы они были понятными. Например, можно использовать название проекта: `myproject-logo-light.png`.
+
+    **Шаг 2.** На странице вставьте обе картинки с классами:
+
+    ```html
+    <img class="logo-light" src="assets/logo-light.webp" width="100" alt="Логотип">
+    <img class="logo-dark" src="assets/logo-dark.webp" width="100" alt="Логотип">
+    ```
+
+    **Шаг 3.** Добавьте правила в `docs/stylesheets/extra.css`:
+
+    ```css
+    /* Светлая тема: показываем светлую версию, прячем тёмную */
+    [data-md-color-scheme="default"] .logo-dark {
+      display: none;
+    }
+
+    /* Тёмная тема: показываем тёмную версию, прячем светлую */
+    [data-md-color-scheme="slate"] .logo-light {
+      display: none;
+    }
+    ```
+
+    **Шаг 4.** Подключите `extra.css` в `mkdocs.yml`:
+
+    ```yaml
+    extra_css:
+      - stylesheets/extra.css
+    ```
+
+    !!! tip "Про логотип в шапке"
+        Переключать логотип в шапке сайта **не нужно** — шапка всегда одного цвета (задаётся параметром `primary`), поэтому там достаточно одного логотипа через `theme.logo`.
+
+    Результат: при переключении темы логотип мгновенно меняется без перезагрузки страницы.
 
 ## 🔧 Расширения Markdown
 

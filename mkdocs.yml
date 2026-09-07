@@ -5,8 +5,9 @@ repo_name: find-project
 
 theme:
   name: material
+  # custom_dir: overrides        # Для динамики логотипа от темы
   language: ru
-  logo: assets/fINd_logo_project_v02.webp  # ← добавили эту строку
+  logo: assets/fINd_logo_project_v02.webp  # Логотип проекта
   palette:
     - scheme: default
       primary: teal
@@ -28,6 +29,9 @@ theme:
     - search.highlight
     - content.code.copy
     - content.code.annotate # Аннотации в коде
+
+extra_css:                      # Для динамики логотипа от темы
+  - stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.highlight:
