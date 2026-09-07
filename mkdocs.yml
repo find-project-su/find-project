@@ -6,6 +6,7 @@ repo_name: find-project
 theme:
   name: material
   language: ru
+  logo: assets/fINd_logo_project_v02.webp  # ← добавили эту строку
   palette:
     - scheme: default
       primary: teal
@@ -40,6 +41,9 @@ markdown_extensions:
       custom_checkbox: true
   - attr_list # Для добавления классов к элементам (например, размер картинок)
   - md_in_html # Чтобы писать Markdown внутри HTML-тегов
+  - pymdownx.emoji:                                          # Поддержка Эмодзи
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Главная: index.md
