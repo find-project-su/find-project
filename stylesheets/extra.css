@@ -1,0 +1,9 @@
+/* Светлая тема: показываем v01, прячем v02 */
+[data-md-color-scheme="default"] .logo-dark {
+  display: none;
+}
+
+/* Тёмная тема: показываем v02, прячем v01 */
+[data-md-color-scheme="slate"] .logo-light {
+  display: none;
+}

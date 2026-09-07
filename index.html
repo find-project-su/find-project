@@ -49,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -441,6 +443,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖼️ Логотип для разных тем
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -458,7 +471,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 Полезные ссылки
@@ -964,6 +977,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖼️ Логотип для разных тем
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -981,7 +1005,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 Полезные ссылки
@@ -1011,7 +1035,8 @@
   
 
 
-<p><img alt="Логотип Find Project" src="assets/fINd_logo_project_v01.webp" width="100" /></p>
+<p><img class="logo-light" src="assets/fINd_logo_project_v01.webp" width="100" alt="Логотип Find Project">
+<img class="logo-dark" src="assets/fINd_logo_project_v02.webp" width="100" alt="Логотип Find Project"></p>
 <h1 id="find-project">f<strong>IN</strong>d Project</h1>
 <p>Добро пожаловать в систему документации, основанную на подходе <strong>Docs as Code</strong>.</p>
 <h2 id="_1">🎨 Настройка оформления</h2>
@@ -1173,6 +1198,45 @@
 </tbody>
 </table>
 </details>
+<h3 id="_5">🖼️ Логотип для разных тем</h3>
+<p>Цвет фона страницы меняется при переключении темы, поэтому логотип в <strong>теле страницы</strong> может становиться плохо видимым. Чтобы этого избежать, используются два варианта логотипа: один для светлой темы, другой для тёмной.</p>
+<details class="note">
+<summary>Как настроить переключаемый логотип</summary>
+<p>При переключении темы MkDocs Material добавляет на страницу атрибут <code>data-md-color-scheme</code> (<code>default</code> для светлой, <code>slate</code> для тёмной). Используем его, чтобы показывать нужный логотип.</p>
+<p><strong>Шаг 1.</strong> Подготовьте два файла логотипа и положите их в <code>docs/assets/</code>:</p>
+<ul>
+<li><code>logo-light.webp</code> — версия для светлой темы</li>
+<li><code>logo-dark.webp</code> — версия для тёмной темы</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Имена файлов</p>
+<p>Названия могут быть любыми — главное, чтобы они были понятными. Например, можно использовать название проекта: <code>myproject-logo-light.png</code>.</p>
+</div>
+<p><strong>Шаг 2.</strong> На странице вставьте обе картинки с классами:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">"logo-light"</span> <span class="na">src</span><span class="o">=</span><span class="s">"assets/logo-light.webp"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Логотип"</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">"logo-dark"</span> <span class="na">src</span><span class="o">=</span><span class="s">"assets/logo-dark.webp"</span> <span class="na">width</span><span class="o">=</span><span class="s">"100"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Логотип"</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><strong>Шаг 3.</strong> Добавьте правила в <code>docs/stylesheets/extra.css</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c">/* Светлая тема: показываем светлую версию, прячем тёмную */</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="o">[</span><span class="nt">data-md-color-scheme</span><span class="o">=</span><span class="s2">"default"</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">logo-dark</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="p">}</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c">/* Тёмная тема: показываем тёмную версию, прячем светлую */</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="o">[</span><span class="nt">data-md-color-scheme</span><span class="o">=</span><span class="s2">"slate"</span><span class="o">]</span><span class="w"> </span><span class="p">.</span><span class="nc">logo-light</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Шаг 4.</strong> Подключите <code>extra.css</code> в <code>mkdocs.yml</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">extra_css</span><span class="p">:</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stylesheets/extra.css</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Про логотип в шапке</p>
+<p>Переключать логотип в шапке сайта <strong>не нужно</strong> — шапка всегда одного цвета (задаётся параметром <code>primary</code>), поэтому там достаточно одного логотипа через <code>theme.logo</code>.</p>
+</div>
+<p>Результат: при переключении темы логотип мгновенно меняется без перезагрузки страницы.</p>
+</details>
 <h2 id="markdown">🔧 Расширения Markdown</h2>
 <details class="note">
 <summary>Показать список расширений</summary>
@@ -1186,7 +1250,7 @@
 <li><strong>Attr list</strong> — атрибуты для изображений: <code>![](image.png){ width=300 }</code></li>
 </ul>
 </details>
-<h2 id="_5">🔗 Полезные ссылки</h2>
+<h2 id="_6">🔗 Полезные ссылки</h2>
 <details class="note">
 <summary>Показать список ссылок</summary>
 <ul>
