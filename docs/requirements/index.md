@@ -9,6 +9,7 @@
 | [Подготовить инструкции по Docs as Code](edu/prepare-instructions.md) | [#10](https://github.com/find-project-su/find-project/issues/10) | ⏳ В работе | EduMaterials |
 | [Требования к иконкам](imgcreate/icons.md) | [#8](https://github.com/find-project-su/find-project/issues/8) | ✅ Выполнено | ImgCreate |
 | [Стиль графики](imgcreate/style-guide.md) | [#8](https://github.com/find-project-su/find-project/issues/8) | ⏳ В работе | ImgCreate |
+| [Стили кольцевых диаграмм](imgcreate/donut-chart-styles.md) | [#12](https://github.com/find-project-su/find-project/issues/12) | ⏳ В работе | ImgCreate |
 
 ## 📖 Как читать эту таблицу
 
