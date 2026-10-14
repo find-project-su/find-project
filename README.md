@@ -6,32 +6,34 @@
 
 ## English
 
-### Overview
-
-A multi-module project containing automated trading bots for cryptocurrency exchanges and a visual content creation system with unified artistic guidelines.
+A multi-module project containing educational materials and a visual content creation system with unified artistic guidelines.
 
 ### Modules
 
-#### 🤖 Trading Bots
-Automated Telegram bots for monitoring futures trading accounts with real-time statistics, dynamic risk assessment, and automated trade notifications.
+#### 📚 Educational Materials
 
-- **OKX Info Bot** → [`Bots/OKX/InfoBot/`](Bots/OKX/InfoBot/)
-- **Poloniex Info Bot** → [`Bots/Poloniex/InfoBot/`](Bots/Poloniex/InfoBot/)
+Quick reference guides, cheat sheets, and practical instructions for development tools, AI models, and workflows.
+
+- **EduMaterials** → [`EduMaterials/`](EduMaterials/)
 
 #### 🎨 Visual Content System
-Comprehensive guidelines for creating illustrations, icons, and graphics in pencil sketch style with consistent aesthetics.
+
+Comprehensive guidelines and prompts for creating illustrations, icons, charts, and graphics in various artistic styles. Detailed style descriptions are available in the module.
 
 - **ImgCreate** → [`ImgCreate/`](ImgCreate/)
 
 ### Tech Stack
 
-- **Backend:** Python 3
-- **Libraries:** pyTelegramBotAPI, requests, colorama
-- **APIs:** OKX REST API, Poloniex REST API
+- **Documentation:** MkDocs with Material theme
+- **Content:** Markdown, WebP images
 
 ### Getting Started
 
-Navigate to any module folder and read its README for detailed installation and configuration instructions.
+Navigate to any module folder and read its README for detailed instructions.
+
+### Documentation
+
+Project documentation is available at [docs site](https://find-project-su.github.io/find-project/).
 
 ### License
 
@@ -41,32 +43,34 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 ## Русский
 
-### Обзор
-
-Многомодульный проект, включающий автоматизированных торговых ботов для криптовалютных бирж и систему создания визуального контента с едиными художественными правилами.
+Многомодульный проект, включающий образовательные материалы и систему создания визуального контента с едиными художественными правилами.
 
 ### Модули
 
-#### 🤖 Торговые боты
-Автоматизированные Telegram-боты для мониторинга фьючерсных торговых счетов со статистикой в реальном времени, динамической оценкой рисков и автоматическими уведомлениями о сделках.
+#### 📚 Образовательные материалы
 
-- **OKX Info Bot** → [`Bots/OKX/InfoBot/`](Bots/OKX/InfoBot/)
-- **Poloniex Info Bot** → [`Bots/Poloniex/InfoBot/`](Bots/Poloniex/InfoBot/)
+Справочные материалы, шпаргалки и практические инструкции для работы с инструментами разработки, ИИ-моделями и рабочими процессами.
+
+- **EduMaterials** → [`EduMaterials/`](EduMaterials/)
 
 #### 🎨 Система визуального контента
-Подробные правила создания иллюстраций, иконок и графики в технике карандашного наброска с единой стилистикой.
+
+Подробные правила и промты для создания иллюстраций, иконок, диаграмм и графики в различных художественных стилях. Детальные описания стилей доступны в модуле.
 
 - **ImgCreate** → [`ImgCreate/`](ImgCreate/)
 
 ### Технологии
 
-- **Язык программирования:** Python 3
-- **Библиотеки:** pyTelegramBotAPI, requests, colorama
-- **Интерфейсы API:** OKX REST API, Poloniex REST API
+- **Документация:** MkDocs с темой Material
+- **Контент:** Markdown, изображения WebP
 
 ### Начало работы
 
-Перейдите в папку нужного модуля и ознакомьтесь с его README — там приведены подробные инструкции по установке и настройке.
+Перейдите в папку нужного модуля и ознакомьтесь с его README для получения подробных инструкций.
+
+### Документация
+
+Документация проекта доступна на [сайте документации](https://find-project-su.github.io/find-project/).
 
 ### Лицензия
 
