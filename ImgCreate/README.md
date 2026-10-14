@@ -1,15 +1,12 @@
 # ImgCreate — Visual Content Creation System 🎨
 
-![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
-![Companion dataset](https://img.shields.io/badge/examples-Hugging%20Face-yellow)
-
-[🇬🇧 English](#english) | [🇷🇺 Русский](#русский)
+🇬🇧 English | 🇷🇺 Русский
 
 ---
 
 ## English
 
-**Contents:** [Overview](#-overview) · [Visual Examples](#-visual-examples) · [Repository Structure](#-repository-structure) · [Style Characteristics](#-style-characteristics) · [Compatibility](#-compatibility--how-to-use-these-prompts) · [Available Instructions](#-available-instructions) · [Getting Started](#-getting-started) · [Recommendations](#-recommendations) · [Use Cases](#-use-cases) · [Technical Requirements](#-technical-requirements) · [Tips](#-tips) · [Contributing](#-contributing) · [Related Projects](#-related-projects) · [License](#-license)
+**Contents:** Overview · Visual Examples · Repository Structure · Style Characteristics · Compatibility · Available Instructions · Getting Started · Recommendations · Use Cases · Technical Requirements · Tips · Contributing · Related Projects · License
 
 ### 🎯 Overview
 
@@ -17,7 +14,7 @@ The ImgCreate system helps create visual content for presentations, landing page
 
 **Main Character:** Rosa Romashkina (Роза Ромашкина) — central visual anchor for character-based illustrations.
 
-This repository contains the **instructions/prompts only**. What they actually produce is shown below and in the companion image dataset — see [Visual Examples](#-visual-examples).
+This repository contains the **instructions/prompts only**. What they actually produce is shown below and in the companion image dataset — see Visual Examples.
 
 ### 🖼 Visual Examples
 
@@ -36,7 +33,7 @@ A few outputs actually generated with the prompts in this repository:
 </tr>
 </table>
 
-Full gallery, resolutions, file-naming convention, and more examples: **[LS_ImgCreate dataset on Hugging Face](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)**.
+Full gallery, resolutions, file-naming convention, and more examples: **LS_ImgCreate dataset on Hugging Face**.
 
 ### 📁 Repository Structure
 
@@ -63,6 +60,8 @@ ImgCreate/
     │   ├── donut_v01.md
     │   ├── histogram_v01.md
     │   └── Spider 0-10scale_Examples.xlsx
+    ├── scenarios/                        # Use case scenarios
+    │   └── img_for_lit_v01.md            # Illustrations for literature/stories
     └── review/                           # Presentation review system
         ├── review_manual.md
         ├── start_review.md
@@ -85,7 +84,7 @@ ImgCreate/
 
 ### 🤖 Compatibility — How to Use These Prompts
 
-These files are not code — they are structured instruction/prompt sets meant to be given as context to an AI assistant capable of generating and editing images (typically: attach or paste the relevant instruction file(s) into the chat/project as reference material, then provide your topic, or an Excel sketch for charts, as input, following the flow in [Getting Started](#-getting-started)).
+These files are not code — they are structured instruction/prompt sets meant to be given as context to an AI assistant capable of generating and editing images (typically: attach or paste the relevant instruction file(s) into the chat/project as reference material, then provide your topic, or an Excel sketch for charts, as input, following the flow in Getting Started).
 
 > **Note for maintainers:** the README doesn't currently say which AI tool(s), models, or app(s) this system was built and tested with (e.g. a specific assistant, whether "project"/custom-instructions support or file-attachment support is required, whether image-generation must be built in or is a separate step). Adding that here would save new users a lot of trial and error.
 
@@ -93,38 +92,43 @@ These files are not code — they are structured instruction/prompt sets meant t
 
 | File | Description | When to Use | Example |
 |------|-------------|-------------|---------|
-| [init_creation_v01.md](Instruction/init_creation_v01.md) | Initial setup guide | Load first for new projects | — |
-| [slide_structure_types_v01.md](Instruction/slide_structure_types_v01.md) | Slide layout and structure guide | For designing presentation slides | — |
-| [img01_main_char_v01.md](Instruction/img01_main_char_v01.md) | Main character illustrations | When Rosa is featured | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/MainChar/00001_Roza%20on%20SkateBoard_DarkTheme_Color.webp) |
-| [img02_no_char_v01.md](Instruction/img02_no_char_v01.md) | Character-free illustrations | For objects, scenes, concepts | — |
-| [img03_icon_v01.md](Instruction/img03_icon_v01.md) | Icon illustrations | For UI elements, navigation | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Icons/10001_Protection_BaseTheme_Color.webp) |
-| [img04_charts_v01.md](Instruction/img04_charts_v01.md) | Chart illustrations | For data visualization | see chart table below |
-| [img05_background_v01.md](Instruction/img05_background_v01.md) | Background illustrations | For textures, decorations | — |
-| [img06_dark_theme_v01.md](Instruction/img06_dark_theme_v01.md) | Dark theme variants | When black background needed | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/MainChar/00001_Roza%20on%20SkateBoard_DarkTheme_Color.webp) |
-| [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Color accent guidelines | When adding color elements | — |
-| [img_cat_v01.md](Instruction/img_cat_v01.md) | Category catalog | Reference for all types | — |
+| init_creation_v01.md | Initial setup guide | Load first for new projects | — |
+| slide_structure_types_v01.md | Slide layout and structure guide | For designing presentation slides | — |
+| img01_main_char_v01.md | Main character illustrations | When Rosa is featured | preview |
+| img02_no_char_v01.md | Character-free illustrations | For objects, scenes, concepts | — |
+| img03_icon_v01.md | Icon illustrations | For UI elements, navigation | preview |
+| img04_charts_v01.md | Chart illustrations | For data visualization | see chart table below |
+| img05_background_v01.md | Background illustrations | For textures, decorations | — |
+| img06_dark_theme_v01.md | Dark theme variants | When black background needed | preview |
+| img07_color_details_v01.md | Color accent guidelines | When adding color elements | — |
+| img_cat_v01.md | Category catalog | Reference for all types | — |
 
 #### Presentation Review System
 | File | Description | When to Use |
 |------|-------------|-------------|
-| [review/review_manual.md](Instruction/review/review_manual.md) | Comprehensive review checklist | For evaluating finished presentations |
-| [review/start_review.md](Instruction/review/start_review.md) | Review initiation prompt | To start AI-assisted review process |
-| [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Context template example | When preparing presentation context |
-| [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Review report example | To understand expected output format |
+| review/review_manual.md | Comprehensive review checklist | For evaluating finished presentations |
+| review/start_review.md | Review initiation prompt | To start AI-assisted review process |
+| review/Example_review_context.md | Context template example | When preparing presentation context |
+| review/Example_review_result.md | Review report example | To understand expected output format |
 
 #### Universal Chart Prompts
 | File | Description | When to Use | Example |
 |------|-------------|-------------|---------|
-| [charts/Spider_Chart_Manual.md](Instruction/charts/Spider_Chart_Manual.md) | Spider chart workflow guide | For creating radar/spider charts | — |
-| [charts/5axis_Spider 0-10scale_v01.md](Instruction/charts/5axis_Spider%200-10scale_v01.md) | 5-axis spider chart prompt, with worked example data | For 5-axis radar diagrams | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30001_SpiderChart_5axis.webp) |
-| [charts/5axis_Spider 0-10scale Template_v01.md](Instruction/charts/5axis_Spider%200-10scale%20Template_v01.md) | Same 5-axis prompt with `[placeholders]` instead of example data | When plugging in your own categories/values | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30001_SpiderChart_5axis.webp) |
-| [charts/6axis_Spider 0-10scale_v01.md](Instruction/charts/6axis_Spider%200-10scale_v01.md) | 6-axis spider chart prompt, with worked example data | For 6-axis radar diagrams | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30002_SpiderChart_6axis.webp) |
-| [charts/6axis_Spider 0-10scale Template_v01.md](Instruction/charts/6axis_Spider%200-10scale%20Template_v01.md) | Same 6-axis prompt with `[placeholders]` instead of example data | When plugging in your own categories/values | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30002_SpiderChart_6axis.webp) |
-| [charts/donut_v01.md](Instruction/charts/donut_v01.md) | Donut chart creation prompt | For creating ring/donut diagrams | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Reference_Imgs/Charts/20001_Donut.webp) |
-| [charts/histogram_v01.md](Instruction/charts/histogram_v01.md) | Histogram creation prompt | For creating vertical bar charts | [preview](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Reference_Imgs/Charts/20002_Histogram.webp) |
-| [charts/Spider 0-10scale_Examples.xlsx](Instruction/charts/Spider%200-10scale_Examples.xlsx) | Excel template with examples | For preparing spider chart data | — |
+| charts/Spider_Chart_Manual.md | Spider chart workflow guide | For creating radar/spider charts | — |
+| charts/5axis_Spider 0-10scale_v01.md | 5-axis spider chart prompt, with worked example data | For 5-axis radar diagrams | preview |
+| charts/5axis_Spider 0-10scale Template_v01.md | Same 5-axis prompt with `[placeholders]` instead of example data | When plugging in your own categories/values | preview |
+| charts/6axis_Spider 0-10scale_v01.md | 6-axis spider chart prompt, with worked example data | For 6-axis radar diagrams | preview |
+| charts/6axis_Spider 0-10scale Template_v01.md | Same 6-axis prompt with `[placeholders]` instead of example data | When plugging in your own categories/values | preview |
+| charts/donut_v01.md | Donut chart creation prompt | For creating ring/donut diagrams | preview |
+| charts/histogram_v01.md | Histogram creation prompt | For creating vertical bar charts | preview |
+| charts/Spider 0-10scale_Examples.xlsx | Excel template with examples | For preparing spider chart data | — |
 
-**📚 Style References:** the full set of style/reference samples is in the [LS_ImgCreate Hugging Face dataset](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate) (`Reference_Imgs/` for style samples, `Example_Imgs/` for ready-made outputs across all categories — main character, icons, and charts, not just charts).
+#### Use Case Scenarios
+| File | Description | When to Use |
+|------|-------------|-------------|
+| scenarios/img_for_lit_v01.md | Creating illustration series for literary works | For stories, novels, poems, articles |
+
+**📚 Style References:** the full set of style/reference samples is in the LS_ImgCreate Hugging Face dataset (`Reference_Imgs/` for style samples, `Example_Imgs/` for ready-made outputs across all categories — main character, icons, and charts, not just charts).
 
 ### 🚀 Getting Started
 
@@ -137,14 +141,15 @@ These files are not code — they are structured instruction/prompt sets meant t
 - Scene without characters? → `Instruction/img02_no_char_v01.md`
 - UI icons? → `Instruction/img03_icon_v01.md`
 - Data visualization? → `Instruction/img04_charts_v01.md`
-- Spider chart, own data? → `Instruction/charts/Spider_Chart_Manual.md` + the matching **Template** file (5 or 6 axis) + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)
+- Spider chart, own data? → `Instruction/charts/Spider_Chart_Manual.md` + the matching **Template** file (5 or 6 axis) + style reference
 - Spider chart, want a worked example first? → the non-Template 5/6-axis file
-- Donut chart? → `Instruction/charts/donut_v01.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)
-- Histogram? → `Instruction/charts/histogram_v01.md` + [style reference](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)
+- Donut chart? → `Instruction/charts/donut_v01.md` + style reference
+- Histogram? → `Instruction/charts/histogram_v01.md` + style reference
 - Backgrounds? → `Instruction/img05_background_v01.md`
 - Dark theme? → `Instruction/img06_dark_theme_v01.md`
 - Color accents? → `Instruction/img07_color_details_v01.md`
 - Presentation slides? → `Instruction/slide_structure_types_v01.md`
+- Literary illustrations (stories, novels, poems)? → `Instruction/scenarios/img_for_lit_v01.md`
 
 **3. Review Your Presentation**
 When your presentation is ready, use the review system:
@@ -191,6 +196,7 @@ Each instruction provides:
 - **Websites and landing pages:** hero illustrations, feature highlights, call-to-action graphics
 - **Marketing:** social media posts, banners, newsletter graphics
 - **Documentation:** tutorial illustrations, infographics, step-by-step guides
+- **Literature:** illustration series for stories, novels, poems, articles with consistent visual style and character continuity
 
 ### 🔧 Technical Requirements
 
@@ -209,9 +215,10 @@ Each instruction provides:
 - **Character-free / background illustrations:** 800×600 px to 1920×1080 px *(not covered by dataset examples — treat as a recommendation rather than a verified spec)*
 - **Spider charts:** 1:1 aspect ratio (square format)
 - **Donut charts, Histograms:** 2:1 aspect ratio (landscape format)
+- **Literary illustrations:** A6 (105:148), A5 (148:210), A4 (210:297) for book formats; 16:9 for presentations; 1:1 for social media
 - **Backgrounds:** match target display dimensions
 
-Format and sizes above match the verified outputs in the [LS_ImgCreate dataset](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate).
+Format and sizes above match the verified outputs in the LS_ImgCreate dataset.
 
 ### 💡 Tips
 
@@ -225,11 +232,11 @@ Format and sizes above match the verified outputs in the [LS_ImgCreate dataset](
 
 ### 🤝 Contributing
 
-Found a mismatch between an instruction and its actual output, a broken link, or want to add a new illustration type? Open an issue or a pull request in this repository. When adding a new prompt file, please also add or update its row in the [Available Instructions](#-available-instructions) table and, if possible, an example output in the companion dataset.
+Found a mismatch between an instruction and its actual output, a broken link, or want to add a new illustration type? Open an issue or a pull request in this repository. When adding a new prompt file, please also add or update its row in the Available Instructions table and, if possible, an example output in the companion dataset.
 
 ### 🔗 Related Projects
 
-- **[LS_ImgCreate dataset](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)** (Hugging Face) — example and reference images actually produced with these prompts, with resolutions, file-naming convention, and category breakdown.
+- **LS_ImgCreate dataset** (Hugging Face) — example and reference images actually produced with these prompts, with resolutions, file-naming convention, and category breakdown.
 
 ### 📄 License
 
@@ -239,7 +246,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 ## Русский
 
-**Содержание:** [Обзор](#-обзор) · [Примеры результата](#-примеры-результата) · [Структура репозитория](#-структура-репозитория) · [Характеристики стиля](#-характеристики-стиля) · [Совместимость](#-совместимость--как-использовать-эти-промты) · [Доступные инструкции](#-доступные-инструкции) · [Начало работы](#-начало-работы) · [Рекомендации](#-рекомендации) · [Области применения](#-области-применения) · [Технические требования](#-технические-требования) · [Советы](#-советы) · [Контрибьюция](#-контрибьюция) · [Связанные проекты](#-связанные-проекты) · [Лицензия](#-лицензия)
+**Содержание:** Обзор · Примеры результата · Структура репозитория · Характеристики стиля · Совместимость · Доступные инструкции · Начало работы · Рекомендации · Области применения · Технические требования · Советы · Контрибьюция · Связанные проекты · Лицензия
 
 ### 🎯 Обзор
 
@@ -247,7 +254,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 
 **Главный персонаж:** Роза Ромашкина — центральный визуальный образ для иллюстраций с участием персонажа.
 
-Этот репозиторий содержит **только инструкции/промты**. То, что они реально производят, показано ниже и в сопроводительном датасете — см. [Примеры результата](#-примеры-результата).
+Этот репозиторий содержит **только инструкции/промты**. То, что они реально производят, показано ниже и в сопроводительном датасете — см. Примеры результата.
 
 ### 🖼 Примеры результата
 
@@ -266,7 +273,7 @@ MIT License — free to use, modify, and distribute with attribution to the orig
 </tr>
 </table>
 
-Полная галерея, разрешения, правила именования файлов и другие примеры: **[датасет LS_ImgCreate на Hugging Face](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)**.
+Полная галерея, разрешения, правила именования файлов и другие примеры: **датасет LS_ImgCreate на Hugging Face**.
 
 ### 📁 Структура репозитория
 
@@ -293,6 +300,8 @@ ImgCreate/
     │   ├── donut_v01.md
     │   ├── histogram_v01.md
     │   └── Spider 0-10scale_Examples.xlsx
+    ├── scenarios/                        # Сценарии использования
+    │   └── img_for_lit_v01.md            # Иллюстрации для литературы/рассказов
     └── review/                           # Система ревью презентаций
         ├── review_manual.md
         ├── start_review.md
@@ -315,7 +324,7 @@ ImgCreate/
 
 ### 🤖 Совместимость — как использовать эти промты
 
-Файлы в этом репозитории — не код, а структурированные наборы инструкций/промтов, которые нужно передать AI-ассистенту, способному генерировать и редактировать изображения (обычно: прикрепить или вставить нужный файл инструкции как контекст в чат/проект, затем дать тему или Excel-эскиз в качестве входных данных — по схеме из раздела [Начало работы](#-начало-работы)).
+Файлы в этом репозитории — не код, а структурированные наборы инструкций/промтов, которые нужно передать AI-ассистенту, способному генерировать и редактировать изображения (обычно: прикрепить или вставить нужный файл инструкции как контекст в чат/проект, затем дать тему или Excel-эскиз в качестве входных данных — по схеме из раздела Начало работы).
 
 > **Заметка для мейнтейнеров:** в README пока не указано, с каким именно AI-инструментом, моделью или приложением эта система разрабатывалась и тестировалась (конкретный ассистент, нужна ли поддержка «проектов»/кастомных инструкций, нужна ли загрузка файлов как вложений, встроена ли генерация изображений или это отдельный шаг). Если добавить эту информацию, новым пользователям не придётся выяснять это методом проб и ошибок.
 
@@ -323,38 +332,43 @@ ImgCreate/
 
 | Файл | Описание | Когда использовать | Пример |
 |------|----------|---------------------|--------|
-| [init_creation_v01.md](Instruction/init_creation_v01.md) | Руководство по начальной настройке | Загружать первым при начале нового проекта | — |
-| [slide_structure_types_v01.md](Instruction/slide_structure_types_v01.md) | Правила компоновки и структуры слайдов | Для оформления презентаций | — |
-| [img01_main_char_v01.md](Instruction/img01_main_char_v01.md) | Иллюстрации с главным персонажем | Когда в кадре присутствует Роза | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/MainChar/00001_Roza%20on%20SkateBoard_DarkTheme_Color.webp) |
-| [img02_no_char_v01.md](Instruction/img02_no_char_v01.md) | Иллюстрации без персонажей | Для предметов, сцен, понятий | — |
-| [img03_icon_v01.md](Instruction/img03_icon_v01.md) | Иконки | Для элементов интерфейса, навигации | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Icons/10001_Protection_BaseTheme_Color.webp) |
-| [img04_charts_v01.md](Instruction/img04_charts_v01.md) | Иллюстрации графиков и схем | Для наглядного представления данных | см. таблицу диаграмм ниже |
-| [img05_background_v01.md](Instruction/img05_background_v01.md) | Фоновые иллюстрации | Для текстур и декоративных элементов | — |
-| [img06_dark_theme_v01.md](Instruction/img06_dark_theme_v01.md) | Варианты в тёмной теме | Когда нужен чёрный фон | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/MainChar/00001_Roza%20on%20SkateBoard_DarkTheme_Color.webp) |
-| [img07_color_details_v01.md](Instruction/img07_color_details_v01.md) | Правила использования цветовых акцентов | При добавлении цветных элементов | — |
-| [img_cat_v01.md](Instruction/img_cat_v01.md) | Каталог категорий | Справочник по всем типам иллюстраций | — |
+| init_creation_v01.md | Руководство по начальной настройке | Загружать первым при начале нового проекта | — |
+| slide_structure_types_v01.md | Правила компоновки и структуры слайдов | Для оформления презентаций | — |
+| img01_main_char_v01.md | Иллюстрации с главным персонажем | Когда в кадре присутствует Роза | пример |
+| img02_no_char_v01.md | Иллюстрации без персонажей | Для предметов, сцен, понятий | — |
+| img03_icon_v01.md | Иконки | Для элементов интерфейса, навигации | пример |
+| img04_charts_v01.md | Иллюстрации графиков и схем | Для наглядного представления данных | см. таблицу диаграмм ниже |
+| img05_background_v01.md | Фоновые иллюстрации | Для текстур и декоративных элементов | — |
+| img06_dark_theme_v01.md | Варианты в тёмной теме | Когда нужен чёрный фон | пример |
+| img07_color_details_v01.md | Правила использования цветовых акцентов | При добавлении цветных элементов | — |
+| img_cat_v01.md | Каталог категорий | Справочник по всем типам иллюстраций | — |
 
 #### Система ревью презентаций
 | Файл | Описание | Когда использовать |
 |------|----------|---------------------|
-| [review/review_manual.md](Instruction/review/review_manual.md) | Подробный чек-лист ревью | Для оценки готовых презентаций |
-| [review/start_review.md](Instruction/review/start_review.md) | Промт для запуска ревью | Для начала процесса ревью с ИИ |
-| [review/Example_review_context.md](Instruction/review/Example_review_context.md) | Пример контекста презентации | При подготовке контекста для ревью |
-| [review/Example_review_result.md](Instruction/review/Example_review_result.md) | Пример отчёта по ревью | Для понимания формата результата |
+| review/review_manual.md | Подробный чек-лист ревью | Для оценки готовых презентаций |
+| review/start_review.md | Промт для запуска ревью | Для начала процесса ревью с ИИ |
+| review/Example_review_context.md | Пример контекста презентации | При подготовке контекста для ревью |
+| review/Example_review_result.md | Пример отчёта по ревью | Для понимания формата результата |
 
 #### Универсальные промты для диаграмм
 | Файл | Описание | Когда использовать | Пример |
 |------|----------|---------------------|--------|
-| [charts/Spider_Chart_Manual.md](Instruction/charts/Spider_Chart_Manual.md) | Руководство по радиолокационным диаграммам | Для создания диаграмм-паутинок | — |
-| [charts/5axis_Spider 0-10scale_v01.md](Instruction/charts/5axis_Spider%200-10scale_v01.md) | Промт для 5-осевой паутинки с готовым примером данных | Для радиолокационных диаграмм с 5 осями | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30001_SpiderChart_5axis.webp) |
-| [charts/5axis_Spider 0-10scale Template_v01.md](Instruction/charts/5axis_Spider%200-10scale%20Template_v01.md) | Тот же промт для 5 осей, но с `[плейсхолдерами]` вместо примера данных | Когда нужно подставить свои категории/значения | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30001_SpiderChart_5axis.webp) |
-| [charts/6axis_Spider 0-10scale_v01.md](Instruction/charts/6axis_Spider%200-10scale_v01.md) | Промт для 6-осевой паутинки с готовым примером данных | Для радиолокационных диаграмм с 6 осями | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30002_SpiderChart_6axis.webp) |
-| [charts/6axis_Spider 0-10scale Template_v01.md](Instruction/charts/6axis_Spider%200-10scale%20Template_v01.md) | Тот же промт для 6 осей, но с `[плейсхолдерами]` вместо примера данных | Когда нужно подставить свои категории/значения | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Example_Imgs/Charts/30002_SpiderChart_6axis.webp) |
-| [charts/donut_v01.md](Instruction/charts/donut_v01.md) | Промт для создания кольцевой диаграммы | Для создания диаграмм-бубликов | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Reference_Imgs/Charts/20001_Donut.webp) |
-| [charts/histogram_v01.md](Instruction/charts/histogram_v01.md) | Промт для создания гистограммы | Для создания вертикальных столбчатых диаграмм | [пример](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate/resolve/main/Reference_Imgs/Charts/20002_Histogram.webp) |
-| [charts/Spider 0-10scale_Examples.xlsx](Instruction/charts/Spider%200-10scale_Examples.xlsx) | Excel-шаблон с примерами | Для подготовки данных для паутинок | — |
+| charts/Spider_Chart_Manual.md | Руководство по радиолокационным диаграммам | Для создания диаграмм-паутинок | — |
+| charts/5axis_Spider 0-10scale_v01.md | Промт для 5-осевой паутинки с готовым примером данных | Для радиолокационных диаграмм с 5 осями | пример |
+| charts/5axis_Spider 0-10scale Template_v01.md | Тот же промт для 5 осей, но с `[плейсхолдерами]` вместо примера данных | Когда нужно подставить свои категории/значения | пример |
+| charts/6axis_Spider 0-10scale_v01.md | Промт для 6-осевой паутинки с готовым примером данных | Для радиолокационных диаграмм с 6 осями | пример |
+| charts/6axis_Spider 0-10scale Template_v01.md | Тот же промт для 6 осей, но с `[плейсхолдерами]` вместо примера данных | Когда нужно подставить свои категории/значения | пример |
+| charts/donut_v01.md | Промт для создания кольцевой диаграммы | Для создания диаграмм-бубликов | пример |
+| charts/histogram_v01.md | Промт для создания гистограммы | Для создания вертикальных столбчатых диаграмм | пример |
+| charts/Spider 0-10scale_Examples.xlsx | Excel-шаблон с примерами | Для подготовки данных для паутинок | — |
 
-**📚 Референсы стиля:** полный набор эталонных образцов — в [датасете LS_ImgCreate на Hugging Face](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate) (`Reference_Imgs/` — образцы стиля, `Example_Imgs/` — готовые примеры по всем категориям: персонаж, иконки, диаграммы, а не только диаграммы).
+#### Сценарии использования
+| Файл | Описание | Когда использовать |
+|------|----------|---------------------|
+| scenarios/img_for_lit_v01.md | Создание серии иллюстраций к литературным произведениям | Для рассказов, романов, стихов, статей |
+
+**📚 Референсы стиля:** полный набор эталонных образцов — в датасете LS_ImgCreate на Hugging Face (`Reference_Imgs/` — образцы стиля, `Example_Imgs/` — готовые примеры по всем категориям: персонаж, иконки, диаграммы, а не только диаграммы).
 
 ### 🚀 Начало работы
 
@@ -367,14 +381,15 @@ ImgCreate/
 - Сцена без персонажей? → `Instruction/img02_no_char_v01.md`
 - Иконки интерфейса? → `Instruction/img03_icon_v01.md`
 - Наглядное представление данных? → `Instruction/img04_charts_v01.md`
-- Паутинка со своими данными? → `Instruction/charts/Spider_Chart_Manual.md` + соответствующий **Template**-файл (5 или 6 осей) + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)
+- Паутинка со своими данными? → `Instruction/charts/Spider_Chart_Manual.md` + соответствующий **Template**-файл (5 или 6 осей) + референс стиля
 - Паутинка, сначала хочется увидеть готовый пример? → файл без Template (5 или 6 осей)
-- Кольцевая диаграмма? → `Instruction/charts/donut_v01.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)
-- Гистограмма? → `Instruction/charts/histogram_v01.md` + [референс стиля](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)
+- Кольцевая диаграмма? → `Instruction/charts/donut_v01.md` + референс стиля
+- Гистограмма? → `Instruction/charts/histogram_v01.md` + референс стиля
 - Фоны? → `Instruction/img05_background_v01.md`
 - Тёмная тема? → `Instruction/img06_dark_theme_v01.md`
 - Цветовые акценты? → `Instruction/img07_color_details_v01.md`
 - Оформление слайдов? → `Instruction/slide_structure_types_v01.md`
+- Литературные иллюстрации (рассказы, романы, стихи)? → `Instruction/scenarios/img_for_lit_v01.md`
 
 **3. Ревью готовой презентации**
 Когда презентация готова, используйте систему ревью:
@@ -421,6 +436,7 @@ ImgCreate/
 - **Сайты и посадочные страницы:** обложки, иллюстрации к функциям, графика для призывов к действию
 - **Маркетинг:** публикации в социальных сетях, баннеры, графика для рассылок
 - **Документация:** иллюстрации к обучающим материалам, инфографика, пошаговые руководства
+- **Литература:** серии иллюстраций для рассказов, романов, стихов, статей с единообразным визуальным стилем и преемственностью персонажей
 
 ### 🔧 Технические требования
 
@@ -439,9 +455,10 @@ ImgCreate/
 - **Иллюстрации без персонажа / фоны:** от 800×600 до 1920×1080 px *(в датасете таких примеров нет — считать рекомендацией, а не подтверждённой спецификацией)*
 - **Радиолокационные диаграммы (паутинки):** соотношение сторон 1:1 (квадратный формат)
 - **Кольцевые диаграммы, гистограммы:** соотношение сторон 2:1 (альбомный формат)
+- **Литературные иллюстрации:** A6 (105:148), A5 (148:210), A4 (210:297) для книжных форматов; 16:9 для презентаций; 1:1 для соцсетей
 - **Фоны:** соответствуют размерам места отображения
 
-Формат и размеры выше соответствуют подтверждённым примерам результата в [датасете LS_ImgCreate](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate).
+Формат и размеры выше соответствуют подтверждённым примерам результата в датасете LS_ImgCreate.
 
 ### 💡 Советы
 
@@ -455,11 +472,11 @@ ImgCreate/
 
 ### 🤝 Контрибьюция
 
-Нашли несоответствие между инструкцией и реальным результатом, битую ссылку, или хотите добавить новый тип иллюстрации? Откройте issue или pull request в этом репозитории. При добавлении нового файла-промта, пожалуйста, также обновите его строку в таблице [Доступные инструкции](#-доступные-инструкции) и, по возможности, добавьте пример результата в сопроводительный датасет.
+Нашли несоответствие между инструкцией и реальным результатом, битую ссылку, или хотите добавить новый тип иллюстрации? Откройте issue или pull request в этом репозитории. При добавлении нового файла-промта, пожалуйста, также обновите его строку в таблице Доступные инструкции и, по возможности, добавьте пример результата в сопроводительный датасет.
 
 ### 🔗 Связанные проекты
 
-- **[Датасет LS_ImgCreate](https://huggingface.co/datasets/LeonidSmoliuk/LS_ImgCreate)** (Hugging Face) — примеры и референсные изображения, реально созданные по этим промтам, с разрешениями, правилами именования файлов и разбивкой по категориям.
+- **Датасет LS_ImgCreate** (Hugging Face) — примеры и референсные изображения, реально созданные по этим промтам, с разрешениями, правилами именования файлов и разбивкой по категориям.
 
 ### 📄 Лицензия
 
