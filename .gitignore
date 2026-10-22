@@ -6,3 +6,5 @@ __pycache__/
 .aider*
 .draft/
 _archive/
+tools/
+.gigatool/
